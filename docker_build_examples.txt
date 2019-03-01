@@ -1,0 +1,12 @@
+# to rebuild all images from docker-compose
+docker-compose build --no-cache
+
+# to rebuild grafana image
+# do not forget about -t grafana parameter because docker compose uses it
+docker build --no-cache -t grafana <path to directory with Dockerfile>
+
+# to build jmeter
+docker build --no-cache -t jmeter <path to directory with Dockerfile>
+
+# to build jenkins
+docker build --no-cache -t jenkins <path to directory with Dockerfile>
